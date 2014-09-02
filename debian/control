@@ -1,0 +1,12 @@
+Source: ros-hydro-bhand-description
+Section: misc
+Priority: extra
+Maintainer: Roman Navarro <rnavarro@robotnik.es>
+Build-Depends: debhelper (>= 9.0.0), ros-hydro-catkin
+Homepage: http://wiki.ros.org/bhand_description
+Standards-Version: 3.9.2
+
+Package: ros-hydro-bhand-description
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, 
+Description: The bhand_description package. This package contains the meshes and urdf files of the hand
