@@ -1,0 +1,12 @@
+Source: ros-hydro-rqt-bhand
+Section: misc
+Priority: extra
+Maintainer: Román Navarro <rnavarro@robotnik.es>
+Build-Depends: debhelper (>= 9.0.0), ros-hydro-catkin
+Homepage: http://ros.org/wiki/rqt_bhand
+Standards-Version: 3.9.2
+
+Package: ros-hydro-rqt-bhand
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, python-rospkg, ros-hydro-bhand-controller, ros-hydro-rostopic, ros-hydro-rqt-gui, ros-hydro-rqt-gui-py
+Description: The rqt_bhand package is intended to test the Barrett Hand in graphical mode
