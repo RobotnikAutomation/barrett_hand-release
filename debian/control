@@ -1,0 +1,12 @@
+Source: ros-indigo-barrett-hand
+Section: misc
+Priority: extra
+Maintainer: Román Navarro <rnavarro@robotnik.es>
+Build-Depends: debhelper (>= 9.0.0), ros-indigo-catkin
+Homepage: http://wiki.ros.org/barrett_hand
+Standards-Version: 3.9.2
+
+Package: ros-indigo-barrett-hand
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-indigo-bhand-controller, ros-indigo-rqt-bhand
+Description: The barrett_hand package contains all the components to control the Barrett Hand
