@@ -1,0 +1,12 @@
+Source: ros-indigo-rqt-bhand
+Section: misc
+Priority: extra
+Maintainer: Román Navarro <rnavarro@robotnik.es>
+Build-Depends: debhelper (>= 9.0.0), ros-indigo-catkin
+Homepage: http://ros.org/wiki/rqt_bhand
+Standards-Version: 3.9.2
+
+Package: ros-indigo-rqt-bhand
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, python-rospkg, ros-indigo-bhand-controller, ros-indigo-rostopic, ros-indigo-rqt-gui, ros-indigo-rqt-gui-py
+Description: The rqt_bhand package is intended to test the Barrett Hand in graphical mode
