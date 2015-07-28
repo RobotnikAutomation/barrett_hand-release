@@ -1,0 +1,10 @@
+ros-indigo-rqt-bhand (0.1.0-0saucy) saucy; urgency=high
+
+  * Updating package.xml files
+  * Updating packages.xml config files
+  * Adding initial structure
+  * Contributors: RobotnikRoman
+
+ -- Román Navarro <rnavarro@robotnik.es>  Mon, 27 Jul 2015 22:00:00 -0000
+
+
