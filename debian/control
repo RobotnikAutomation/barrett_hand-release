@@ -1,0 +1,12 @@
+Source: ros-kinetic-rqt-bhand
+Section: misc
+Priority: extra
+Maintainer: Román Navarro <rnavarro@robotnik.es>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-catkin
+Homepage: http://ros.org/wiki/rqt_bhand
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-rqt-bhand
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, python-rospkg, ros-kinetic-bhand-controller, ros-kinetic-rostopic, ros-kinetic-rqt-gui, ros-kinetic-rqt-gui-py, ros-kinetic-sensor-msgs
+Description: The rqt_bhand package is intended to test the Barrett Hand in graphical mode
