@@ -68,7 +68,7 @@ class BHandGUI(Plugin):
 		# variable to store the sensor data when receives it
 		self._bhand_data = State()
 		self._joint_data = JointState()
-		self._tact_data = TactileArray()
+		self._tact_data = None
 			
 		rp = rospkg.RosPack()
 		
@@ -94,6 +94,7 @@ class BHandGUI(Plugin):
 		self.orange_string = "background-color: rgb(255,128,0)"
 		self.yellow_string = "background-color: rgb(255,255,0)"
 		self.green_string = "background-color: rgb(128,255,0)"
+		self.black_string = "background-color: rgb(0,0,0)"
 		
 		self.palm_factor = max_base_spread/99
 		self.finger_factor = max_finger_spread/99
@@ -436,6 +437,10 @@ class BHandGUI(Plugin):
 				
 		
 	def _receive_tact_data(self, msg):
+		
+		if self._tact_data is None:
+			self._tact_data = TactileArray()
+			
 		self._tact_data = msg
 	
 			
@@ -670,7 +675,7 @@ class BHandGUI(Plugin):
 		#self.blue = 0
 		#color_string = "background-color: rgb(" + str(self.red) + "," + str(self.green) + "," + str(self.blue) + ")"
 		
-		if self._bhand_data.state == 300:
+		if self._tact_data is not None and self._bhand_data.state == 300:
 			
 			#Finger 1
 			for i in range(0,8):
@@ -686,6 +691,8 @@ class BHandGUI(Plugin):
 						color_string = self.orange_string
 					elif 12.0 <= value and value <= 16.0:
 						color_string = self.red_string
+					else:
+						color_string = self.black_string
 					getattr(self._widget,lcd_string).setStyleSheet(color_string)
 		
 			#Finger 2
@@ -702,6 +709,8 @@ class BHandGUI(Plugin):
 						color_string = self.orange_string
 					elif 12.0 <= value and value <= 16.0:
 						color_string = self.red_string
+					else:
+						color_string = self.black_string
 					getattr(self._widget,lcd_string).setStyleSheet(color_string)
 				
 			#Finger 3
@@ -718,6 +727,8 @@ class BHandGUI(Plugin):
 						color_string = self.orange_string
 					elif 12.0 <= value and value <= 16.0:
 						color_string = self.red_string
+					else:
+						color_string = self.black_string
 					getattr(self._widget,lcd_string).setStyleSheet(color_string)
 				
 			#Palm
@@ -733,6 +744,8 @@ class BHandGUI(Plugin):
 					color_string = self.orange_string
 				elif 7.5 <= value and value <= 16.0:
 					color_string = self.red_string
+				else:
+					color_string = self.black_string
 				getattr(self._widget,lcd_string).setStyleSheet(color_string)
 		
 		
