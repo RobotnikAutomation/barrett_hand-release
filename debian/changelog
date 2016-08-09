@@ -1,0 +1,32 @@
+ros-kinetic-bhand-controller (0.1.2-0jessie) jessie; urgency=high
+
+  * indigo-0.1.1
+  * Redoing CHANGELOGS
+  * bhand_controller: renaming README
+  * Preparing changelog
+  * Modifying .gitignore, CMakelist to install the packages, removing .pyc files
+  * Modifying .gitignore, CMakelist to install the packages, removing .pyc files
+  * Indigo supported packages
+  * Adding changelog files
+  * Adding changelog files
+  * Updating package.xml files
+  * Updating packages.xml config files
+  * Adding initial structure
+  * Contributors: Elena Gambaro, RobotnikRoman, RomanRobotnik
+  * indigo-0.1.1
+  * Redoing CHANGELOGS
+  * bhand_controller: renaming README
+  * Preparing changelog
+  * Modifying .gitignore, CMakelist to install the packages, removing .pyc files
+  * Modifying .gitignore, CMakelist to install the packages, removing .pyc files
+  * Indigo supported packages
+  * Adding changelog files
+  * Adding changelog files
+  * Updating package.xml files
+  * Updating packages.xml config files
+  * Adding initial structure
+  * Contributors: Elena Gambaro, RobotnikRoman, RomanRobotnik
+
+ -- Román Navarro <rnavarro@robotnik.es>  Mon, 08 Aug 2016 22:00:00 -0000
+
+
