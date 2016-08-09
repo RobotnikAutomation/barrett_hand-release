@@ -1,0 +1,24 @@
+ros-kinetic-barrett-hand (0.1.2-0xenial) xenial; urgency=high
+
+  * indigo-0.1.1
+  * Redoing CHANGELOGS
+  * barrett_hand: removing dependency on bhand_description
+  * Preparing changelog
+  * Adding changelog files
+  * Updating package.xml files
+  * Updating packages.xml config files
+  * Adding initial structure
+  * Contributors: RobotnikRoman, RomanRobotnik
+  * indigo-0.1.1
+  * Redoing CHANGELOGS
+  * barrett_hand: removing dependency on bhand_description
+  * Preparing changelog
+  * Adding changelog files
+  * Updating package.xml files
+  * Updating packages.xml config files
+  * Adding initial structure
+  * Contributors: RobotnikRoman, RomanRobotnik
+
+ -- Román Navarro <rnavarro@robotnik.es>  Mon, 08 Aug 2016 22:00:00 -0000
+
+
